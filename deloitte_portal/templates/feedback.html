@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Client Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h2>Client Feedback Form</h2>
+
+    <form method="POST">
+      <label>Your Name:</label><br>
+      <input name="username" placeholder="Enter your name"><br><br>
+
+      <label>Comment:</label><br>
+      <textarea name="comment" rows="4" cols="30" placeholder="Your feedback"></textarea><br><br>
+
+      <button>Send</button>
+    </form>
+
+    <a href="{{ url_for('home') }}">⬅ Back to Home</a>
+  </body>
+</html>

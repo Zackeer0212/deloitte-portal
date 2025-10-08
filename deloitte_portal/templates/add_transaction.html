@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h2>Add New Transaction</h2>
+
+    <form method="POST">
+      <label>Client Name:</label><br>
+      <input name="client" placeholder="e.g. Tesla Inc."><br><br>
+
+      <label>Transaction Amount (USD):</label><br>
+      <input name="amount" placeholder="e.g. 12000"><br><br>
+
+      <button>Submit</button>
+    </form>
+
+    <a href="{{ url_for('home') }}">⬅ Back to Records</a>
+  </body>
+</html>
